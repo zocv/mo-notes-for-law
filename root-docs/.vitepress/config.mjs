@@ -4,6 +4,8 @@ import { setAllSidebar } from './fans-tools/tools/autoSidebar'
 export default defineConfig({
   title: "法律笔记",
   description: "A VitePress Site",
+  base: '/mo-notes-for-law/',
+
   markdown: {
 
   },
