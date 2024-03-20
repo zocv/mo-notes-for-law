@@ -21,10 +21,12 @@ export default defineConfig({
           { text: '案例库', link: '/repo/civil-law-cases/00 简述' }
         ]
       },
-      { text: '民诉法', link: '/' },
-      { text: '刑法', link: '/' },
-      { text: '刑诉法', link: '/' },
-      { text: '行政法', link: '/' },
+      { text: '民法典', link: '/repo/law-library/001 民法典/00 简述' },
+      { text: '魔笔记', link: 'https://hengqianfan.github.io/mo-notes/' }
+      // { text: '民诉法', link: '/' },
+      // { text: '刑法', link: '/' },
+      // { text: '刑诉法', link: '/' },
+      // { text: '行政法', link: '/' },
 
 
     ],
@@ -32,6 +34,9 @@ export default defineConfig({
       ['/repo/civil-law-provisions', 1],
       ['/repo/civil-law-cases', 1],
       ['/repo/civil-law', 1],
+      ['/repo/law-library/001 民法典', 1],
+
+
     ]),
     outline: {
       label: "目录",
