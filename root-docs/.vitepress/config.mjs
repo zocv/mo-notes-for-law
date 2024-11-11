@@ -15,25 +15,35 @@ export default defineConfig({
     nav: [
       // { text: 'Home', link: '/' },
       {
-        text: '民法', items: [
-          { text: '知识库', link: '/repo/civil-law/00 简述' },
-          { text: '法条库', link: '/repo/civil-law-provisions/00 简述' },
-          { text: '案例库', link: '/repo/civil-law-cases/00 简述' }
+        text: '民事领域', items: [
+          { text: '实务案例', link: '/repo/civil-law-cases/00 简述' },
+          { text: '民法知识', link: '/repo/civil-law/00 简述' },
+          { text: '法条库', link: '/repo/law-library/00 简述' }
         ]
       },
-      { text: '民法典', link: '/repo/law-library/001 民法典/00 简述' },
-      { text: '魔笔记', link: 'https://hengqianfan.github.io/mo-notes/' }
-      // { text: '民诉法', link: '/' },
-      // { text: '刑法', link: '/' },
-      // { text: '刑诉法', link: '/' },
-      // { text: '行政法', link: '/' },
+      {
+        text: '刑事领域', items: [
+          { text: '实务案例', link: '/repo/criminal-law-cases/00 简述' },
+          { text: '刑法知识', link: '/repo/criminal-law/00 简述' },
+          { text: '法条库', link: '/repo/law-library/00 简述' }
+        ]
+      },
+      {
+        text: '行政领域', items: [
+          { text: '实务案例', link: '/repo/administrative-law-cases/00 简述' },
+          { text: '行政法知识', link: '/repo/administrative-law/00 简述' },
+          { text: '法条库', link: '/repo/law-library/00 简述' }
+        ]
+      },
 
 
     ],
     sidebar: setAllSidebar([
-      ['/repo/civil-law-provisions', 1],
       ['/repo/civil-law-cases', 1],
       ['/repo/civil-law', 1],
+      ['/repo/criminal-law-cases', 1],
+      ['/repo/criminal-law', 1],
+
       ['/repo/law-library/001 民法典', 1],
 
 

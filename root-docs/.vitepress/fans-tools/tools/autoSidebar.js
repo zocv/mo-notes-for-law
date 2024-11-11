@@ -17,9 +17,17 @@ const isDir = (path) => fs.lstatSync(path).isDirectory()
 
 
 const process_filename = (momo) => {
-    let res1 = momo.split('.md')[0]
-    let res2 = res1.split(' ')[1]
-    return res2
+    // 判断文件名中是否含有空格符号
+    let IsExistSpaceCharacter = momo.indexOf(' ')
+
+    if (IsExistSpaceCharacter == -1) {
+        let res = momo.split('.md')[0]
+        return res
+    } else {
+        let res1 = momo.split('.md')[0]
+        let res2 = res1.split(' ')[1]
+        return res2
+    }
 }
 
 const process_filename_part = (momo) => {
@@ -57,6 +65,7 @@ export const create_sidebar = (dir_unprocessed, folder_level) => {
      * @returns 
      */
     const create_list = (items, repo_path, dir_unprocessed, folder_level, now_level) => {
+
         const final_list = []
 
 
